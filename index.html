@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Black Uma Project - Portfolio</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
 
     body {
       background-color: #050507;
@@ -26,59 +26,25 @@
       border: 1px solid #1a1c23;
     }
 
-    /* HERO TITLE (STYLE PAGE 1 PDF) */
-    .bup-hero-p1 {
-      position: relative;
+    /* CONTAINER HERO DENGAN GAMBAR LOGO ASLI PRESISI */
+    .bup-hero-box {
       width: 100%;
-      min-height: 220px;
-      background: #080504;
-      background: radial-gradient(circle at 35% 45%, #7a3a14 0%, #2b1408 40%, #080504 80%);
       border-radius: 12px;
       overflow: hidden;
-      padding: 20px 25px;
-      box-sizing: border-box;
-      display: flex;
-      align-items: center;
+      margin-bottom: 16px;
       border: 1px solid #2a180e;
       box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-      margin-bottom: 16px;
+      background: #080504;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    /* Siluet Kuda/Anime */
-    .bup-hero-p1::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      transform: translateY(-50%);
-      width: 150px;
-      height: 150px;
-      background: #000;
-      clip-path: polygon(
-        0% 40%, 15% 25%, 30% 28%, 20% 10%, 40% 20%, 55% 15%, 70% 30%, 85% 20%, 80% 40%, 100% 55%,
-        85% 70%, 70% 65%, 60% 85%, 45% 75%, 30% 90%, 25% 70%, 10% 75%, 15% 55%
-      );
-      opacity: 0.85;
-      filter: blur(1px);
-      pointer-events: none;
-    }
-
-    .bup-title-container {
-      position: relative;
-      z-index: 2;
-      margin-left: 90px;
-    }
-
-    .bup-main-title {
-      font-family: 'Anton', sans-serif;
-      font-size: 38px;
-      line-height: 0.95;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      background: linear-gradient(180deg, #ffc06e 0%, #ff832b 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin: 0;
+    .bup-hero-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
     }
 
     /* CARD STATIC (VISION MISSION & BACKGROUND) */
@@ -212,26 +178,15 @@
     .bup-btn:hover {
       background: #6342e0;
     }
-
-    @media (max-width: 600px) {
-      .bup-hero-p1 { min-height: 180px; padding: 15px; }
-      .bup-main-title { font-size: 28px; }
-      .bup-title-container { margin-left: 50px; }
-      .bup-hero-p1::before { width: 100px; height: 100px; }
-    }
   </style>
 </head>
 <body>
 
 <div class="bup-wrap">
 
-  <!-- HERO TITLE -->
-  <div class="bup-hero-p1">
-    <div class="bup-title-container">
-      <h1 class="bup-main-title">
-        BLACK UMA<br>PROJECT
-      </h1>
-    </div>
+  <!-- GAMBAR LOGO HERO UTAMA -->
+  <div class="bup-hero-box">
+    <img src="logo.jpg" alt="Black Uma Project Header" class="bup-hero-img">
   </div>
 
   <!-- ABOUT US -->
@@ -239,27 +194,27 @@
     <input type="checkbox" id="tab-about">
     <label class="bup-acc-label" for="tab-about">About Us</label>
     <div class="bup-acc-content">
-      <p><b>Black Uma Project (BUP)</b> adalah Graphic Design Studio yang berfokus pada ilustrasi bergaya anime, desain karakter, animasi, dan desain grafis[span_3](start_span)[span_3](end_span). Kami percaya desain yang bagus tidak selalu harus terlalu serius[span_4](start_span)[span_4](end_span). Terkadang butuh konsep yang kuat, gambar yang bagus, dan seekor kuda yang berlari ke arah yang salah[span_5](start_span)[span_5](end_span).</p>
-      <p style="color: #ff832b; font-style: italic; margin-top: 10px;">"Draw it. Design it. Make it move.[span_6](start_span)"[span_6](end_span)</p>
+      <p><b>Black Uma Project (BUP)</b> adalah Graphic Design Studio yang berfokus pada ilustrasi bergaya anime, desain karakter, animasi, dan desain grafis[span_1](start_span)[span_1](end_span). Kami percaya desain yang bagus tidak selalu harus terlalu serius[span_2](start_span)[span_2](end_span). Terkadang butuh konsep yang kuat, gambar yang bagus, dan seekor kuda yang berlari ke arah yang salah[span_3](start_span)[span_3](end_span).</p>
+      <p style="color: #ff832b; font-style: italic; margin-top: 10px;">"Draw it. Design it. Make it move.[span_4](start_span)"[span_4](end_span)</p>
       <hr style="border: 0; border-top: 1px solid #1f2330; margin: 14px 0;">
-      <p><b>Filosofi Logo:</b> Terinspirasi dari bahasa Jepang "Uma" (馬) yang berarti kuda, melambangkan kebebasan, energi, ketahanan, dan keberanian untuk terus melangkah maju[span_7](start_span)[span_7](end_span). Siluet dalam logo memadukan konsep karakter anime Jepang dengan elemen kuda, merepresentasikan passion kami pada pop culture serta kreativitas yang terus bergerak tanpa henti[span_8](start_span)[span_8](end_span).</p>
+      <p><b>Filosofi Logo:</b> Terinspirasi dari bahasa Jepang "Uma" (馬) yang berarti kuda, melambangkan kebebasan, energi, ketahanan, dan keberanian untuk terus melangkah maju[span_5](start_span)[span_5](end_span). Siluet dalam logo memadukan konsep karakter anime Jepang dengan elemen kuda, merepresentasikan passion kami pada pop culture serta kreativitas yang terus bergerak tanpa henti[span_6](start_span)[span_6](end_span).</p>
     </div>
   </div>
 
   <!-- VISION MISSION & BACKGROUND -->
   <div class="bup-box">
     <h3>Our Vision & Mission</h3>
-    <p><b>Vision:</b> Menjadi studio kreatif di mana ilustrasi, desain, dan animasi menyatu untuk menghidupkan berbagai ide[span_9](start_span)[span_9](end_span).</p>
+    <p><b>Vision:</b> Menjadi studio kreatif di mana ilustrasi, desain, dan animasi menyatu untuk menghidupkan berbagai ide[span_7](start_span)[span_7](end_span).</p>
     <br>
     <p><b>Mission:</b></p>
-    <p>• <b>Create:</b> Mengembangkan karya visual ekspresif dan berkesan[span_10](start_span)[span_10](end_span).</p>
-    <p>• <b>Explore:</b> Berekperimen dengan style, karakter, dan ide visual baru[span_11](start_span)[span_11](end_span).</p>
-    <p>• <b>Connect:</b> Menciptakan visual yang berkomunikasi dengan audiens[span_12](start_span)[span_12](end_span).</p>
-    <p>• <b>Collaborate:</b> Bekerja erat dengan klien selama proses kreatif[span_13](start_span)[span_13](end_span).</p>
-    <p>• <b>Have Fun:</b> Karena kreativitas bekerja lebih maksimal saat tidak dipaksa kaku[span_14](start_span)[span_14](end_span).</p>
+    <p>• <b>Create:</b> Mengembangkan karya visual ekspresif dan berkesan[span_8](start_span)[span_8](end_span).</p>
+    <p>• <b>Explore:</b> Berekperimen dengan style, karakter, dan ide visual baru[span_9](start_span)[span_9](end_span).</p>
+    <p>• <b>Connect:</b> Menciptakan visual yang berkomunikasi dengan audiens[span_10](start_span)[span_10](end_span).</p>
+    <p>• <b>Collaborate:</b> Bekerja erat dengan klien selama proses kreatif[span_11](start_span)[span_11](end_span).</p>
+    <p>• <b>Have Fun:</b> Karena kreativitas bekerja lebih maksimal saat tidak dipaksa kaku[span_12](start_span)[span_12](end_span).</p>
 
     <h3 style="margin-top: 22px;">Background</h3>
-    <p style="margin-bottom:0;">Black Uma Project menciptakan konten visual untuk brand, creator, komunitas, dan individu yang menginginkan karya ekspresif dan orisinal[span_15](start_span)[span_15](end_span). Dari sketsa karakter anime pertama hingga desain grafis promosi akhir, kami mengubah ide menjadi karya bernyawa[span_16](start_span)[span_16](end_span).</p>
+    <p style="margin-bottom:0;">Black Uma Project menciptakan konten visual untuk brand, creator, komunitas, dan individu yang menginginkan karya ekspresif dan orisinal[span_13](start_span)[span_13](end_span). Dari sketsa karakter anime pertama hingga desain grafis promosi akhir, kami mengubah ide menjadi karya bernyawa[span_14](start_span)[span_14](end_span).</p>
   </div>
 
   <!-- OBJEKTIF -->
@@ -267,11 +222,11 @@
     <input type="checkbox" id="tab-objektif">
     <label class="bup-acc-label" for="tab-objektif">Objektif</label>
     <div class="bup-acc-content">
-      <p>• Mengubah ide menjadi karya visual yang ekspresif[span_17](start_span)[span_17](end_span).</p>
-      <p>• Menciptakan ilustrasi & karakter bergaya anime yang khas[span_18](start_span)[span_18](end_span).</p>
-      <p>• Menyediakan solusi desain grafis yang praktis dan kreatif[span_19](start_span)[span_19](end_span).</p>
-      <p>• Membantu klien berkomunikasi lewat visual berpribadi kuat[span_20](start_span)[span_20](end_span).</p>
-      <p>• Memastikan setiap proyek terasa unik dan tidak generik[span_21](start_span)[span_21](end_span).</p>
+      <p>• Mengubah ide menjadi karya visual yang ekspresif[span_15](start_span)[span_15](end_span).</p>
+      <p>• Menciptakan ilustrasi & karakter bergaya anime yang khas[span_16](start_span)[span_16](end_span).</p>
+      <p>• Menyediakan solusi desain grafis yang praktis dan kreatif[span_17](start_span)[span_17](end_span).</p>
+      <p>• Membantu klien berkomunikasi lewat visual berpribadi kuat[span_18](start_span)[span_18](end_span).</p>
+      <p>• Memastikan setiap proyek terasa unik dan tidak generik[span_19](start_span)[span_19](end_span).</p>
     </div>
   </div>
 
@@ -283,23 +238,23 @@
       <div class="bup-grid">
         <div class="bup-card">
           <h5>Art Director</h5>
-          <p>Mengarahkan arah visual keseluruhan dan kualitas kreatif[span_22](start_span)[span_22](end_span).</p>
+          <p>Mengarahkan arah visual keseluruhan dan kualitas kreatif[span_20](start_span)[span_20](end_span).</p>
         </div>
         <div class="bup-card">
           <h5>Graphic Designer</h5>
-          <p>Mengembangkan branding, promosi, layout, dan konten digital[span_23](start_span)[span_23](end_span).</p>
+          <p>Mengembangkan branding, promosi, layout, dan konten digital[span_21](start_span)[span_21](end_span).</p>
         </div>
         <div class="bup-card">
           <h5>Illustrator</h5>
-          <p>Membuat ilustrasi, karakter, concept art, dan aset visual[span_24](start_span)[span_24](end_span).</p>
+          <p>Membuat ilustrasi, karakter, concept art, dan aset visual[span_22](start_span)[span_22](end_span).</p>
         </div>
         <div class="bup-card">
           <h5>Animator</h5>
-          <p>Menghidupkan karakter melalui gerak animasi 2D & motion[span_25](start_span)[span_25](end_span).</p>
+          <p>Menghidupkan karakter melalui gerak animasi 2D & motion[span_23](start_span)[span_23](end_span).</p>
         </div>
         <div class="bup-card">
           <h5>Project Manager</h5>
-          <p>Menangani koordinasi, jadwal, komunikasi, dan delivery[span_26](start_span)[span_26](end_span).</p>
+          <p>Menangani koordinasi, jadwal, komunikasi, dan delivery[span_24](start_span)[span_24](end_span).</p>
         </div>
       </div>
     </div>
@@ -311,10 +266,10 @@
     <label class="bup-acc-label" for="tab-products">Products & Services</label>
     <div class="bup-acc-content">
       <p><b>Layanan Utama:</b></p>
-      <p>• <b>Illustration:</b> Karya seni anime ekspresif untuk komersial & personal[span_27](start_span)[span_27](end_span).</p>
-      <p>• <b>Character Design:</b> Karakter orisinal dengan identitas unik[span_28](start_span)[span_28](end_span).</p>
-      <p>• <b>3D Modeling & Animation:</b> Pembuatan model & animasi 3D[span_29](start_span)[span_29](end_span).</p>
-      <p>• <b>Services Tambahan:</b> Key Visual, Fan Art, Custom Artwork, & Logo Design[span_30](start_span)[span_30](end_span).</p>
+      <p>• <b>Illustration:</b> Karya seni anime ekspresif untuk komersial & personal[span_25](start_span)[span_25](end_span).</p>
+      <p>• <b>Character Design:</b> Karakter orisinal dengan identitas unik[span_26](start_span)[span_26](end_span).</p>
+      <p>• <b>3D Modeling & Animation:</b> Pembuatan model & animasi 3D[span_27](start_span)[span_27](end_span).</p>
+      <p>• <b>Services Tambahan:</b> Key Visual, Fan Art, Custom Artwork, & Logo Design[span_28](start_span)[span_28](end_span).</p>
       <br>
       <b style="color: #fff;">Portfolio Samples (Rasio 16:9):</b>
       <div class="bup-img-grid">
@@ -343,5 +298,4 @@
 </div>
 
 </body>
-          </html>
-          
+</html>
